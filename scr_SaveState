@@ -1,0 +1,12 @@
+obj_System_Generator.objList = ds_list_create();
+with (obj_System_Generator)
+{
+    global.zz = asset_get_index(object_get_name(object_index));
+}
+with (all)
+{   
+    if !((asset_get_index(object_get_name(object_index)) == global.zz))
+    {
+        ds_list_add(obj_System_Generator.objList, x, y, asset_get_index(object_get_name(object_index)));
+    }
+}
