@@ -1,0 +1,7 @@
+for (j = 0; j < ds_list_size(obj_System_Generator.objList); j+=3)
+{
+    var ex = ds_list_find_value(obj_System_Generator.objList, j);
+    var why = ds_list_find_value(obj_System_Generator.objList, j+1);
+    var obj = ds_list_find_value(obj_System_Generator.objList, j+2);
+    instance_create(ex, why, obj);    
+}
